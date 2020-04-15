@@ -67,57 +67,35 @@
 					</a>
                </header>
 			 </div>
-
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
-                    
-                    <section class="au-callout">					
-					<h4>Please note</h4>
-<p>Lorem ipsum</p>
+					<section class="au-callout">					
+					<h4>User details</h4>
+<p><strong>Name:</strong> Jim Jones<br>
+<strong>ARN:</strong> 1478952<br>
+<strong>Role:</strong> CEO<br>
 					</section>
+
+					
+					
+					<div class="au-form-group">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                        
+                    </fieldset>
+                    </div>  
+					
+					
+
 				
-<h2>CEO details</h2>
-					
-<div class="au-form-group">
-					<label class="au-label" for="textarea">Qualifications</label>
-					<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
-
-					</textarea>
-					</div>
-                    
-                    <div class="au-form-group">
-					<label class="au-label" for="textarea">Work experience</label>
-					<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
-
-					</textarea>
-					</div>
-                    
-                    <div class="au-form-group">
-					<label class="au-label" for="textarea">Relevant knowledge</label>
-					<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
-
-					</textarea>
-					</div>
-
-<div class="au-form-group">
-			<h4>Upload supporting documentation</h4>
-			<br>
-			<button class="au-btn au-btn--secondary" type="button">Choose file</button><br>
-			<span class="form-text">Accepted file types are PDF documents (.pdf) and the following image formats: .jpg, .bmp and .png</span>
-		 </div>
-					
-					
-
-					
-
-
-					  
 
 
 				   
 				<div class="au-form-group">
 
-				<a class="au-btn" href="application-summary-ceo-owner.html">Next</a>
+								<div id="navigate" "navigate2">
+			    <a href="application-summary-ceo-owner.html" class="au-btn au-btn--primary">Next</a>          
+            </div>
 					
 
 
@@ -144,17 +122,11 @@
             </div>
          </div>
       </main>
-	   		  <script>
-		  $("input[name=assessed-simulator]").on("change", function () {
-        if ($(this).val() === "aircraft") {
-            $(".vh-mark").removeClass("casa-hidden");
-            $(".simulator").addClass("casa-hidden");
-        } else if ($(this).val() === "simulator") {
-            $(".vh-mark").addClass("casa-hidden");
-            $(".simulator").removeClass("casa-hidden");
-        }
-    });
-
-		  </script>	 
+ <script>
+        $("#navigate a"). click(function(){
+				var radioValue = $("input[name='role-choice']:checked"). val();
+				window.location.href=radioValue+".html";
+			 }); 
+       </script>
    </body>
 </html>
