@@ -10,35 +10,31 @@
       <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
-	  <script type="text/javascript" src="va.js"></script> 
       <script type="text/javascript">
          /* page specific js */
          
-         
+         $(document).ready(function() {
+       
+     
+				 
+         });
       </script>
+      <style type="text/css">
+         /* page specific css */
+         
+
+         
+      </style>
    </head>
-   <body class="live-demo au-body au-grid">
+   <body class="live-demo au-body au-grid casa-dashboard">
       <main class="au-grid">
          <div class="header">
             <div class="container">
                <div class="row">
                   <div class="logo au-body au-body--dark">
-                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                     <a href="index.html"><img src="../mycasa-src-3.0/img/CASALOGO-white-i.svg"></a>
                   </div>
-                  <div class="casa-menu">
-                  
-                  	<div id="dropdown-menu">
-						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
-						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
-						<br />
-						<p id="mycasa-home"><a href="#">myCASA home</a></p>
-						<p><a href="#">Switch profile</a></p>
-						<p><a href="mycasa-signed-out.html">Sign out</a></p>
-						</div>
-                  
-                  
                   </div>
-               </div></div>
             </div>
          </div>
          <div class="body">
@@ -59,62 +55,85 @@
                     <li>Add user</li>
                   </ul>
                </nav>
-			 <div class="casa-section">
+			 
+			                   
+			 <div class="casa-section">	
                <header class="au-header" role="banner">
                   <h1 class="break desktop au-header-heading">Add user</h1>
-                  <a class="au-direction-link" href="javascript:history.back()">
+				   				   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
                </header>
 			 </div>
+
+<div class="casa-section">			 
+<div class="au-table__wrapper">			 
+<table class="au-table au-table--striped">
+    <caption class="au-table__caption">User details summary</caption>
+    <thead class="au-table__head">
+        <tr class="au-table__row">
+            <th scope="col" class="au-table__header">Name</th>
+            <th scope="col" class="au-table__header">ARN</th>
+            <th scope="col" class="au-table__header">Role</th>
+		</tr>
+    </thead>
+    <tbody class="au-table__body">
+        <tr class="au-table__row">
+            <td class="au-table__cell">Billy Wilkins</td>
+            <td class="au-table__cell">NUMBER</td>
+            <td class="au-table__cell">CEO</td>
+		</tr>
+    </tbody>
+</table>
+</div>	
+</div>		
+
+			 
+<div class="casa-section">
+<h3>Declaration</h3>
+<div class="au-callout">
 <div class="row">
-               	<div class="col-xs-12 col-md-12 col-lg-6">
-					<section class="au-callout">					
-					<h4>User details</h4>
-<p><strong>Name:</strong> Jim Jones<br>
-<strong>ARN:</strong> 1478952<br>
-<strong>Role:</strong> CEO<br>
-					</section>
-
-					
-					
-					<div class="au-form-group">     
-                    <fieldset class="au-fieldset">
-                        <legend class="au-fieldset__legend">
-                        
-                    </fieldset>
-                    </div>  
-					
-					
-
-				
-
+<div class="col-xs-12 col-lg-9">
+<label class="au-control-input">
+<input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="declaration">
+<span class="au-control-input__text form-text p-t-0">
+		All statements in this Declaration must be correct. Making a false or misleading statement to CASA is an offence.</span>
+</label>
+</div>
+</div>
+</div>	 
+</div>
+		
 
 				   
-				<div class="au-form-group">
+				<div class="form-navigation">
 
-								<div id="navigate" "navigate2">
-			    <a href="application-summary-ceo-owner.html" class="au-btn au-btn--primary">Next</a>          
-            </div>
+				<a class="au-btn" href="notification-submitted-ceo.html">Submit</a>
+
 					
 
+					<hr />
 
 
+
+<a href="saved.html" class="au-btn au-btn--secondary">
+
+  Save and exit
+
+</a>&nbsp; to continue this application later
 
 					
 
 				</div>
-				               <hr />
-            <a href="arn-saved.html" class="au-btn au-btn--secondary">
-            Save and exit application
-            </a>  
+				   
 				   
             </div>
-			 </div>
-			 </div>
-		  </div>
-
-
+   
+				   
+				   
+				   
+            </div>
+         </div>
           <div class="footer">
            
             <div class="footer-wrapper">
@@ -122,11 +141,5 @@
             </div>
          </div>
       </main>
- <script>
-        $("#navigate a"). click(function(){
-				var radioValue = $("input[name='role-choice']:checked"). val();
-				window.location.href=radioValue+".html";
-			 }); 
-       </script>
    </body>
 </html>

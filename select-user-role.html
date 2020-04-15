@@ -55,7 +55,7 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
-                      <li><a href="manage-users.html">Manage users</a></li>
+                      <li><a href="#">Manage users</a></li>
                     <li>Add user</li>
                   </ul>
                </nav>
@@ -83,45 +83,37 @@
                             <h3 class="au-display-sm">Please select a role</h3>
                         </legend>
 
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="role-choice"
-                                       id="authorised-rep" value="application-summary">
-                                <label class="au-control-input__text" for="authorised-rep">Authorised representative</label>
-                        </div>
+                      
                         
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="role-choice"
-                                       id="ceo" value="ceo-owner-information">
-                                <label class="au-control-input__text" for="ceo">CEO</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="role-choice"
-                                       id="owner" value="ceo-owner-information">
-                                <label class="au-control-input__text" for="owner">Owner</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="role-choice"
-                                       id="role-a" value="application-summary">
-                                <label class="au-control-input__text" for="role-a">Contact person</label>
-                        </div>
-
-
-                        
-                    </fieldset>
-                    </div>  
+                         
 					
-					
-
-				
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="contact-person" id="contact-person">
+  <label class="au-control-input__text" for="contact-person">Contact person</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="authorised-rep" id="authorised-rep">
+  <label class="au-control-input__text" for="authorised-rep">Authorised representative</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="ceo" id="ceo">
+  <label class="au-control-input__text" for="ceo">CEO</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="owner" id="owner">
+  <label class="au-control-input__text" for="owner">Owner</label>
+</div>
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="damp-contact" id="damp-contact">
+  <label class="au-control-input__text" for="damp-contact">DAMP contact</label>
+</div>			
 
 
 				   
 				<div class="au-form-group">
 
 								<div id="navigate" "navigate2">
-			    <a href="#" class="au-btn au-btn--primary">Next</a>          
+			    <a href="application-summary.html" class="au-btn au-btn--primary">Next</a>          
             </div>
 					
 

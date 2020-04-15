@@ -67,33 +67,39 @@
 					</a>
                </header>
 			 </div>
+
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
-					<section class="au-callout">					
-					<h4>User details</h4>
-<p><strong>Name:</strong> Jim Jones<br>
-<strong>ARN:</strong> 1478952</p>
-					</section>
+				
+<h2>User details</h2>
+					
+
+
+			<div class="au-form-group">
+                        <label class="au-label" for="name">User family name</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="start-time"/>
+          	</div>
+					
+			<div class="au-form-group">
+                        <label class="au-label" for="name">User aviation reference number</label>
+                        <input type="text" class="au-text-input au-text-input--block" id="duration"/>
+          	</div>
+					
+					
 
 					
-				
-					
-					
+
+
+					  
+
 
 				   
 				<div class="au-form-group">
 
-								<div id="navigate" "navigate2">
-			              
-            </div>
+				<a class="au-btn" href="select-user-role-ceo.html">Next</a>
 					
 
-<div class="au-form-group">
 
-
-				<a class="au-btn" href="application-summary.html">Next</a>
-					
-				</div>
 
 
 					
@@ -117,11 +123,17 @@
             </div>
          </div>
       </main>
- <script>
-        $("#navigate a"). click(function(){
-				var radioValue = $("input[name='role-choice']:checked"). val();
-				window.location.href=radioValue+".html";
-			 }); 
-       </script>
+	   		  <script>
+		  $("input[name=assessed-simulator]").on("change", function () {
+        if ($(this).val() === "aircraft") {
+            $(".vh-mark").removeClass("casa-hidden");
+            $(".simulator").addClass("casa-hidden");
+        } else if ($(this).val() === "simulator") {
+            $(".vh-mark").addClass("casa-hidden");
+            $(".simulator").removeClass("casa-hidden");
+        }
+    });
+
+		  </script>	 
    </body>
 </html>
